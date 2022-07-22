@@ -63,7 +63,7 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <h1 class="hero-title">Ефективні рішення <br> для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -124,13 +124,28 @@
                 <h2 class="section-title">Чим ми займаємось</h2>
                 <ul class="duit-list list">
                     <li class="duit-item">
-                        <img src="./img/p1.jpg" alt="кодим" width="370" height="294" class="duit-img">
+                        <div class="duit-position">
+                            <img src="./img/p1.jpg" alt="кодим" width="370" height="294" class="duit-img">
+                            <div class="duit-box">
+                                ДЕСКТОПНІ ДОДАТКИ
+                            </div>
+                        </div>
                     </li>
                     <li class="duit-item">
-                        <img src="./img/p2.jpg" alt="розробляєм" width="370" height="294" class="duit-img">
+                        <div class="duit-position">
+                            <img src="./img/p2.jpg" alt="розробляєм" width="370" height="294" class="duit-img">
+                            <div class="duit-box">
+                                МОБІЛЬНІ ДОДАТКИ
+                            </div>  
+                        </div>                          
                     </li>
                     <li class="duit-item">
-                        <img src="./img/p3.jpg" alt="тестуєм" width="370" height="294" class="duit-img">
+                        <div class="duit-position">
+                            <img src="./img/p3.jpg" alt="тестуєм" width="370" height="294" class="duit-img">
+                            <div class="duit-box">
+                                ДИЗАЙНЕРСЬКІ РІШЕННЯ
+                            </div>
+                        </div>                        
                     </li>
                 </ul>
             </div>
@@ -404,6 +419,20 @@
             </div>
         </div>
     </footer>
+
+<!-- Modal window -->
+
+    <div class="backdrop is-hidden" data-modal >
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="modal-icons" width="18px" height="18px">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
